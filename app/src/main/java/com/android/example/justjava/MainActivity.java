@@ -27,12 +27,10 @@ public class MainActivity extends AppCompatActivity {
 	 * This method is called when the order button is clicked.
 	 */
 	public void submitOrder(View view) {
-		int quantity = 2;
-		display(quantity);
 		displayPrice(quantity * 5);
 	}
 
-	public int quantity = 0;
+	int quantity = 0;
 
 	/**
 	 * This method increases the  quantity value on the screen.
@@ -48,11 +46,9 @@ public class MainActivity extends AppCompatActivity {
 	 */
 
 		public void decrement (View view){
-		if(quantity>0){
 		quantity -= 1;
-		display(quantity);
-		displayPrice(quantity * 5);}
-	}
+		display(quantity);}
+
 
 	/**
 	 * This method displays the given quantity value on the screen.
